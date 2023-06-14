@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
     title: `gatsby-adapters-alpha-demo`,
   },
   // You can uncomment the `adapter` line below to use the local adapter
-  adapter: localAdapter(),
+  // adapter: localAdapter(),
   plugins: [],
 }
 
