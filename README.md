@@ -10,6 +10,10 @@ As part of the RFC we also worked on `gatsby-adapter-netlify`. When you publish 
 info Using gatsby-adapter-netlify adapter
 ```
 
+Deploy this demo with one click on [Netlify](https://app.netlify.com/signup):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-adapters-alpha-demo)
+
 Locally you can also use the [netlify-cli](https://github.com/netlify/cli) and use:
 
 ```shell
