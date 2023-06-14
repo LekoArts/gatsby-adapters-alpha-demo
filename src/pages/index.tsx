@@ -28,7 +28,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <main style={pageStyles}>
       <h1 style={headingStyles}>Gatsby Adapters 🎉🎉🎉</h1>
       <p style={paragraphStyles}>
-        Learn more here: <a style={linkStyle} href="">RFC: Gatsby Adapters</a>
+        Learn more here: <a style={linkStyle} href="https://github.com/gatsbyjs/gatsby/discussions/38231">RFC: Gatsby Adapters</a>
       </p>
     </main>
   )

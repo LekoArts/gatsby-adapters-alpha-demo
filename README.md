@@ -1,6 +1,6 @@
 # Gatsby Adapters: Alpha (Demo)
 
-Demo site for the corresponding [RFC: Gatsby Adapters](#TODO). It uses `gatsby@alpha-adapters` and thus still outputs some more verbose logging.
+Demo site for the corresponding [RFC: Gatsby Adapters](https://github.com/gatsbyjs/gatsby/discussions/38231). It uses `gatsby@alpha-adapters` and thus still outputs some more verbose logging.
 
 ## Try it out: Netlify
 
