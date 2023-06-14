@@ -1,49 +1,36 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# Gatsby Adapters: Alpha (Demo)
 
-## 🚀 Quick start
+Demo site for the corresponding [RFC: Gatsby Adapters](#TODO). It uses `gatsby@alpha-adapters` and thus still outputs some more verbose logging.
 
-1.  **Create a Gatsby site.**
+## Try it out: Netlify
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+As part of the RFC we also worked on `gatsby-adapter-netlify`. When you publish your site to Netlify you should see a log like:
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+```shell
+info Using gatsby-adapter-netlify adapter
+```
 
-2.  **Start developing.**
+Locally you can also use the [netlify-cli](https://github.com/netlify/cli) and use:
 
-    Navigate into your new site’s directory and start it up.
+```shell
+ntl serve
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+The netlify-cli will then run the build and serve the Gatsby site.
 
-3.  **Open the code and start customizing!**
+## Try it out: Locally
 
-    Your site is now running at http://localhost:8000!
+If you don't want to publish this demo site to Netlify and/or want to try out an adapter locally, you can edit the `gatsby-config.ts` to uncomment the `adapter` line:
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+```diff
+- // adapter: localAdapter(),
++ adapter: localAdapter(),
+```
 
-4.  **Learn more**
+Now run `gatsby build` and you should see the log:
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+```shell
+info Using gatsby-adapter-local adapter
+```
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Adapters are only run during `gatsby build`, so if you modify the `local-adapter.ts` file, you have to re-run `gatsby build`.
